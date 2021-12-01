@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: workshop
 title: Modern Analytics Academy Overview
 permalink: /azure/data-analytics-ai/modern-analytics-academy-overview
 tags: 
@@ -12,6 +12,16 @@ tags:
 
 # Modern Analytics Academy - Overview
 
+##  Content
+
+* [Modern Analytics Academy Home](/PartnerResources/azure/data-analytics-ai/modern-analytics-academy)
+* Modern Analytics Overview
+* [Module 1: Data Acquisition and Storage](/PartnerResources/azure/data-analytics-ai/modern-analytics-academy-data-acquisition)
+* [Module 2: Data Modeling](/PartnerResources/azure/data-analytics-ai/modern-analytics-academy-data-modeling)
+* [Module 3: Data Pipelines](/PartnerResources/azure/data-analytics-ai/modern-analytics-academy-data-pipelines)
+* [Module 4: Data Governance](/PartnerResources/azure/data-analytics-ai/modern-analytics-academy-data-governance)
+* [Module 5: Visualization](/PartnerResources/azure/data-analytics-ai/modern-analytics-academy-data-visualization)
+
 Welcome to the Modern Analytics Academy (MAA) Overview!
 
 The Overview session is designed to give an overall picture of modern analytics in Azure -- understanding the business needs in a modern organization, and understanding the choices available in the Azure platform. We'll answer many of the "why" questions in this high level presentation. 
@@ -22,7 +32,6 @@ The Overview session is designed to give an overall picture of modern analytics 
 * [Playlist for all Modern Analytics Academy videos](https://www.youtube.com/playlist?list=PLz7jPMmpNrjm35mPO6KcOeNdMEMSYKXfj)
 * [Modern Analytics Academy - Overview recording](https://www.youtube.com/watch?v=mk31vgGCzy4)
 [![Modern Analytics Academy Overview](https://img.youtube.com/vi/mk31vgGCzy4/0.jpg)](https://www.youtube.com/watch?v=mk31vgGCzy4)
-
 
 ## Hands-on Content
 

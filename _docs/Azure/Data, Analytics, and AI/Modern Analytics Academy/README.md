@@ -19,9 +19,10 @@ tags:
 * [Module 4: Data Governance](/PartnerResources/azure/data-analytics-ai/modern-analytics-academy-data-governance)
 * [Module 5: Visualization](/PartnerResources/azure/data-analytics-ai/modern-analytics-academy-data-visualization)
 
-(Test 8) Welcome to the Modern Analytics Academy (MAA)!
 
-The Modern Analyics Academy consists of several modules designed to illustrate and upskill on modern techniques, principles, and technologies available on the Microsoft Azure platform. The content will explore analytics in Microsoft Azure, Azure Synapse Analytics, data modeling and storage, event processing, data governance, and Power BI. 
+Welcome to the Modern Analytics Academy (MAA)! 
+
+The Modern Analytics Academy consists of several modules designed to illustrate and upskill on modern techniques, principles, and technologies available on the Microsoft Azure platform. The content will explore analytics in Microsoft Azure, Azure Synapse Analytics, data modeling and storage, event processing, data governance, and Power BI. 
 
 The content is designed to be highly integrated but loosely coupled: each module stands on its own, while collectively representing a cohesive piece of modern-day analytical solutions. If you just want to dive into Power BI or Data Governance, for example, you can simply pick those modules. Those new to Azure or Analytics in general may prefer to work through all modules, starting with the Overview.
 
@@ -35,10 +36,6 @@ If you'd like to check out the series live, please use these following links:
 * Nov 16, 2021 2pm ET [Modern Analytics Academy: Data Pipelines](https://msuspartners.eventbuilder.com/event/50234)
 * Nov 30, 2021 2pm ET [Modern Analytics Academy: Data Governance](https://msuspartners.eventbuilder.com/event/50235)
 * Dec 7, 2021 2pm ET [Modern Analytics Academy: Visualization](https://msuspartners.eventbuilder.com/event/50236)
-
-## Hands-on Content
-
-Each module contains several options for hands-on learning. In most cases, there are multiple options available designed to meet your specific skilling needs, from simple tutorial/demo content to more advanced workshops and labs. We understand that some people may just want to see demos while others want to dive deep, or somewhere in between. Use the content that best suits you!
 
 ## Table of Contents
 
@@ -102,7 +99,19 @@ Refer to links below for the module breakouts.
 
 ## Hands-on provisioned Environments
 
-We're working to provide lab environments for the various modules. Details will be updated soon!
+Want to go hands-on with a fully provisioned environment? Check out our Modern Analytics Academy lab environments hosted by Spektra Systems, available for a limited time. The environments are only available to United States based partners.
+
+* Sign-up link: [https://bit.ly/3COKiz1](https://bit.ly/3COKiz1)
+* Activation code: ACTIVATE1365
+
+The lab environments available are listed below. The source content is available if you'd like to see what's covered in each lab -- however, the lab environment will display all of this info for you as you progress through the lab. Once the lab environment is started, there is a limited time to complete the lab due to the number of resources provisioned. If you'd like to keep all of the assets as you go through the lab, we recommend following the lab guides listed below and deploy the resources into your  Azure account. 
+
+| Lab Name | Time | Content | 
+|---|---|---|
+| Azure Synapse Analytics and AI | 8 hours | [Lab](https://github.com/microsoft/MCW-Azure-Synapse-Analytics-and-AI/blob/master/Hands-on%20lab/HOL%20step-by%20step%20-%20Azure%20Synapse%20Analytics%20and%20AI.md) |
+| Analytics In a Day - Synapse | 4 hours | [Lab](https://github.com/solliancenet/azure-synapse-analytics-day) |
+| Simplifying data flows with Azure Data Factory | 8 hours | [Lab](https://github.com/solliancenet/tech-immersion-data-ai/blob/master/data-exp5/README.md) |
+| Modern Data Warehouse with Azure Synapse Analytics, <br />Azure Databricks, Azure Data Factory, and Power BI | 4 hours | [Lab](https://github.com/solliancenet/tech-immersion-data-ai/blob/master/data-exp6/README.md) |
 
 ## Contributions
 
