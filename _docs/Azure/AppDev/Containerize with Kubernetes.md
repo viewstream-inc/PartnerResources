@@ -2,6 +2,7 @@
 layout: page
 title: Containerize with Kubernetes
 permalink: /azure/appdev/containerize-with-kubernetes
+campaignid: 1234
 tags: 
  - azure
  - appdev
