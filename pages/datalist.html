@@ -11,7 +11,8 @@ permalink: /azure/dataai
 {% assign all_tags = site_tags | append:docs_tags %}{% assign tags_list = all_tags | split:',' | uniq | sort %}
 
 
-<h2>below is doc in site.docs</h2>
+
+{% for tag in tags_list %}{% if tag %}<h3 id="{{ tag | replace: '/', '-' }}" class="linked-section">{{ tag }}</h3>
 
 {% for doc in site.docs %}{% if doc.tags contains tag %}
 <div class="tag-entry">
