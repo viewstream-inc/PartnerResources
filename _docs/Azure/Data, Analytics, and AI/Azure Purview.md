@@ -6,6 +6,7 @@ tags:
  - azure
  - purview
  - data
+ - learning plan
 ---
 
 # Learning Plan Resources for Azure Purview

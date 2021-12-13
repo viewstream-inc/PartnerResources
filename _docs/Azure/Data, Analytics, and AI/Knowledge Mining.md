@@ -6,6 +6,7 @@ tags:
  - azure
  - knowledge mining
  - cognitive services
+ - learning plan
 ---
 
 # Learning Plan Resources for Knowledge Mining with Cognitive Search

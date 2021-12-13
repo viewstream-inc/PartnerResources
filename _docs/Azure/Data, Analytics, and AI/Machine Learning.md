@@ -6,6 +6,7 @@ tags:
  - azure
  - machine learning
  - ai
+ - learning plan
 ---
 
 # Learning Plan Resources for Machine Learning

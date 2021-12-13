@@ -6,6 +6,7 @@ tags:
  - azure
  - healthcare
  - analytics
+ - learning plan
 ---
 
 # Learning Plan Resources for FHIR Powered Healthcare

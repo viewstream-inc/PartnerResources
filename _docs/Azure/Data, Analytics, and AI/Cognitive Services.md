@@ -6,6 +6,7 @@ tags:
  - azure
  - ai
  - cognitive services
+ - learning plan
 ---
 
 # Learning Plan Resources for Cognitive Services

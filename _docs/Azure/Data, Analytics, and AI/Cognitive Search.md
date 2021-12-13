@@ -7,6 +7,7 @@ tags:
  - ai
  - cognitive search
  - deprecated
+ - learning plan
 ---
 
 # Link Update

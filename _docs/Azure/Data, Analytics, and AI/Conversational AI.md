@@ -6,6 +6,7 @@ tags:
  - azure
  - ai
  - bot service
+ - learning plan
 ---
 
 # Learning Plan Resources for Conversational AI

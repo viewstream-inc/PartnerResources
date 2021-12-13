@@ -6,6 +6,7 @@ tags:
  - azure
  - sql server
  - migration
+ - learning plan
 ---
 
 # Learning Plan Resources for SQL Server Migration to Azure

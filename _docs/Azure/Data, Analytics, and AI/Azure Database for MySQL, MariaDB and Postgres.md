@@ -7,6 +7,7 @@ tags:
  - postgres
  - mysql
  - database
+ - learning plan
 ---
 
 # Learning Plan Resources for Azure Database for MySQL, MariaDB, and Postgres

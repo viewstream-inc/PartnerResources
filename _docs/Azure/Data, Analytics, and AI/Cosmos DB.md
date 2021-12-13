@@ -6,6 +6,7 @@ tags:
  - azure
  - big data
  - cosmos db
+ - learning plan
 ---
 
 # Learning Plan Resources for Cosmos DB
