@@ -18,10 +18,10 @@ permalink: /azure/dataai
 {% for doc in site.docs %}
 {% if doc.tags contains tag %}
 <div class="tag-entry">
-    <h2><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a></h2>
-    <h3>{{ doc.description }}</h3>
-    <h3>{% for tag in doc.tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</h3>
-    <h3><time style="font-style:italic;" datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time></h3>
+    <a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a>
+    {{ doc.description }}
+    {% for tag in doc.tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}
+    <time style="font-style:italic;" datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>
 </div>
 <div></div>
 {% endif %}
