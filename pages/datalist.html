@@ -5,17 +5,17 @@ permalink: /azure/dataai
 
 <h2 id="tags-index">Data & AI Learning Plans</h2>
 
-<!-- 12/13/2021 12:21 -->
+<!-- 12/13/2021 1:23 -->
 
-{% capture site_tags %}{% for tag in site.tags %}{% if tag == "learning plan" && tag == "synapse" %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endcapture %}{% assign docs_tags = "" %}{% for doc in site.docs %}{% assign ttags = doc.tags | join:',' | append:',' %}{% assign docs_tags = docs_tags | append:ttags %}{% endfor %}
+{% capture site_tags %}{% for tag in site.tags %}{% if tag %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endcapture %}{% assign docs_tags = "" %}{% for doc in site.docs %}{% assign ttags = doc.tags | join:',' | append:',' %}{% assign docs_tags = docs_tags | append:ttags %}{% endfor %}
 {% assign all_tags = site_tags | append:docs_tags %}{% assign tags_list = all_tags | split:',' | uniq | sort %}
-
+{% assign all_docs = site.docs | sort %}
 
 {% for tag in tags_list %}
 {% if tag == "learning plan" && tag == "data, analytics, and ai" %}
 <!-- <h3 id="{{ tag | replace: '/', '-' }}" class="linked-section">{{ tag }}</h3> -->
 
-{% for doc in site.docs %}
+{% for doc in all_docs %}
 {% if doc.tags contains tag %}
 <div class="tag-entry">
     <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a></div>
