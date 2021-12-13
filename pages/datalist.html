@@ -3,7 +3,7 @@ title: Data & AI Learning Plans Test
 permalink: /azure/dataai
 ---
 
-<h1 id="tags-index">Data & AI Learning Plans</h1>
+<h2 id="tags-index">Data & AI Learning Plans</h2>
 
 <!-- 12/13/2021 12:21 -->
 
@@ -23,7 +23,7 @@ permalink: /azure/dataai
     <div>{% for tag in doc.tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
     <div>Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time></div>
 </div>
-<div></div>
+<div style="padding-bottom: 30px;"></div>
 {% endif %}
 {% endfor %}
 
