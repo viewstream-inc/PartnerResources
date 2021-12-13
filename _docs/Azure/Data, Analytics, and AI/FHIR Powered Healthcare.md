@@ -1,11 +1,14 @@
 ---
 layout: page
 title: FHIR Powered Healthcare
+description: Resources for Fast Healthcare Interoperability Resources (FHIR)
+date: 2021-12-13
 permalink: /azure/data-analytics-ai/fhir-powered-healthcare
 tags: 
  - azure
  - healthcare
  - analytics
+ - data, analytics, and ai
  - learning plan
 ---
 

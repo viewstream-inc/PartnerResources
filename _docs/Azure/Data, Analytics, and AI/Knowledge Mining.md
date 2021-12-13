@@ -1,11 +1,14 @@
 ---
 layout: page
 title: Knowledge Mining with Cognitive Search
+description: Resources for knowledge mining with Azure Cognitive Search
+date: 2021-12-13
 permalink: /azure/data-analytics-ai/knowledge-mining
 tags: 
  - azure
  - knowledge mining
  - cognitive services
+ - data, analytics, and ai
  - learning plan
 ---
 

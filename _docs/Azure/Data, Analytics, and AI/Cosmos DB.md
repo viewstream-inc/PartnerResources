@@ -1,11 +1,14 @@
 ---
 layout: page
 title: Cosmos DB
+description: Resources for Azure Cosmos DB, Microsoft's globally distributed no-sql database
+date: 2021-12-13
 permalink: /azure/data-analytics-ai/cosmos-db
 tags: 
  - azure
  - big data
  - cosmos db
+ - data, analytics, and ai
  - learning plan
 ---
 

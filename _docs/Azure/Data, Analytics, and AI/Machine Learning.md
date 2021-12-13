@@ -1,11 +1,14 @@
 ---
 layout: page
 title: Machine Learning
+description: Resources for Azure Machine Learning solutions
+date: 2021-12-13
 permalink: /azure/data-analytics-ai/machine-learning
 tags: 
  - azure
  - machine learning
  - ai
+ - data, analytics, and ai
  - learning plan
 ---
 

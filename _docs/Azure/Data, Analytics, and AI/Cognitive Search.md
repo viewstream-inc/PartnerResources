@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Retired Page
+description: Resources for Cognitive Search
+date: 2021-12-13
 permalink: /azure/data-analytics-ai/cognitive-search
 tags: 
  - azure
  - ai
  - cognitive search
  - deprecated
- - learning plan
 ---
 
 # Link Update
