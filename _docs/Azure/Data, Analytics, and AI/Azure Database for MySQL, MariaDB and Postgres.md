@@ -1,12 +1,15 @@
 ---
 layout: page
 title: OSS DB to Azure
+description: Resources for Azure Database for MySQL, MariaDB, and Postgres
+date: 2021-12-13
 permalink: /azure/data-analytics-ai/oss-db-to-azure
 tags: 
  - azure
  - postgres
  - mysql
  - database
+ - data, analytics, and ai
  - learning plan
 ---
 
