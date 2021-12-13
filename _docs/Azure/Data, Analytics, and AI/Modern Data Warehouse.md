@@ -1,12 +1,14 @@
 ---
 layout: page
 title: Azure Synapse Analytics
+description: Learning plan for Azure Synapse Analytics, evolved from Azure SQL Data Warehouse that combines enterprise data warehousing with big data analytics
 permalink: /azure/data-analytics-ai/modern-data-warehouse
 tags: 
  - azure
  - synapse
  - sql server
  - data warehouse
+ - learning plan
 ---
 
 # Learning Plan Resources for Azure Synapse Analytics
