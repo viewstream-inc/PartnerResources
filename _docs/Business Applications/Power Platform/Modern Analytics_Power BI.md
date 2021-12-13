@@ -2,7 +2,7 @@
 layout: page
 title: Modern Analytics Power BI
 description: Resources for creating dashboards with Power BI
-date: 2021-12-13
+date: 2021-12-01
 permalink: /business-applications/power-platform/modern-analytics-power-bi
 tags:
  - business-applications

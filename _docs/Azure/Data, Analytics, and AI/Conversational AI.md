@@ -2,7 +2,7 @@
 layout: page
 title: Conversational AI
 description: Resources for Conversational AI, Bots, and QnA Maker
-date: 2021-12-13
+date: 2021-12-09
 permalink: /azure/data-analytics-ai/conversational-ai
 tags: 
  - azure

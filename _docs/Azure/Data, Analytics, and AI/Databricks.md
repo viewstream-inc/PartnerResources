@@ -2,7 +2,7 @@
 layout: page
 title: Databricks
 description: Resources for Azure Databricks, a data analytics platform optimized for the Microsoft Azure cloud services platform
-date: 2021-12-13
+date: 2021-12-07
 permalink: /azure/data-analytics-ai/databricks
 tags: 
  - azure
