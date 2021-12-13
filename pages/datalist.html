@@ -14,8 +14,8 @@ permalink: /azure/dataai
 
 
 {% for tag in tags_list %}
-{% if tag == "learning plan" %}
-<h3 id="{{ tag | replace: '/', '-' }}" class="linked-section">{{ tag }}</h3>
+{% if tag == "learning plan" && tag == "data, analytics, and ai" %}
+<!-- <h3 id="{{ tag | replace: '/', '-' }}" class="linked-section">{{ tag }}</h3> -->
 
 {% for doc in site.docs %}
 {% if doc.tags contains tag %}
