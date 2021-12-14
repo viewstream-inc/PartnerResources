@@ -9,12 +9,12 @@ permalink: /azure/azureplans
 {% assign all_tags = site_tags | append:docs_tags %}{% assign tags_list = all_tags | split:',' | uniq | sort %}
 {% assign all_docs = site.docs | sort: "title" %}
 
-#### {% raw %}[AppDev](appdev){% endraw %}
+<h2><a href="{{- site.baseurl -}}/azure/appdev/">AppDev</a></h2>
 
 {% for doc in all_docs %}
 {% if doc.tags contains "learning plan" and doc.tags contains "appdev" %}
 <div class="tag-entry" style="padding-left:25px;">
-    <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
+    <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)</div>
 </div>
 {% endif %}
 {% endfor %}
@@ -24,7 +24,7 @@ permalink: /azure/azureplans
 {% for doc in all_docs %}
 {% if doc.tags contains "learning plan" and doc.tags contains "data, analytics, and ai" %}
 <div class="tag-entry" style="padding-left:25px;">
-    <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
+    <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)</div>
 </div>
 {% endif %}
 {% endfor %}
@@ -34,7 +34,7 @@ permalink: /azure/azureplans
 {% for doc in all_docs %}
 {% if doc.tags contains "learning plan" and doc.tags contains "infrastructure" %}
 <div class="tag-entry" style="padding-left:25px;">
-    <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
+    <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)</div>
 </div>
 {% endif %}
 {% endfor %}
@@ -48,4 +48,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 2:09pm
+12/14/2021 2:18pm
