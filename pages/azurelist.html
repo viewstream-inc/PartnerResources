@@ -48,7 +48,7 @@ Tag test:
 
 Doc where test:
 
-{% assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" %}
+{% assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'data, analytics, and ai'"" %}
 {% for doc in data_docs %}
 <div class="tag-entry" style="padding-left:25px;">
     <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)</div>
@@ -65,4 +65,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 2:59pm
+12/14/2021 3:01pm
