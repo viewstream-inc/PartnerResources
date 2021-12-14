@@ -46,8 +46,12 @@ Tag test:
 Doc where test:
 
 {% assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'data, analytics, and ai'"" %}
-{% assign data_tags = "" %}{% for doc in data_docs %}{% assign ttags = doc.tags | join:',' | append:',' %}{% assign data_tags = data_tags | append:ttags %}{% endfor %}
-{% assign data_tags = data_tags | split:',' | uniq | sort %}
+{% assign data_tags = "" %}
+{% for doc in data_docs %}
+    {% assign ttags = doc.tags | join:',' | append:',' %}
+    {% assign data_tags = data_tags | append:ttags %}
+{% endfor %}
+
 <div>{% for tag in data_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
 
 
@@ -58,10 +62,13 @@ Doc where test:
 </div>
 {% endfor %}
 
+
+
 <!--
 
-assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'data, analytics, and ai'"" 
-for doc in data_docs 
+ assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'data, analytics, and ai'"" 
+ assign data_tags = "" %}{% for doc in data_docs %}{% assign ttags = doc.tags | join:',' | append:',' %}{% assign data_tags = data_tags | append:ttags %}{% endfor 
+ assign data_tags = data_tags | split:',' | uniq | sort
 
 azure
 
@@ -71,4 +78,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 3:10pm
+12/14/2021 3:22pm
