@@ -41,9 +41,14 @@ permalink: /azure/azureplans
 
 
 
-Tag test:
+all tag test:
+<div>{% for tag in all_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
 
-Doc where test:
+all tags_list test:
+<div>{% for tag in tags_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+
+
+data tag where test:
 
 {% assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'data, analytics, and ai'"" %}
 {% assign data_tags = "" %}
@@ -74,4 +79,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 3:30pm
+12/14/2021 3:41pm
