@@ -5,12 +5,13 @@ description: Evolved from Azure SQL Data Warehouse, combining enterprise data wa
 date: 2021-12-03
 permalink: /azure/data-analytics-ai/modern-data-warehouse
 tags: 
- - azure
- - synapse
- - sql server
- - data warehouse
- - data, analytics, and ai
- - learning plan
+- azure
+- data, analytics, and ai
+- learning plan
+- synapse
+- sql server
+- data warehouse
+
 ---
 
 # Learning Plan Resources for Azure Synapse Analytics

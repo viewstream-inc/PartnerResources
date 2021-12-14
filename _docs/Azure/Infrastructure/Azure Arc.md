@@ -3,8 +3,10 @@ layout: page
 title: Azure Arc
 permalink: /azure/infrastructure/azure-arc
 tags: 
- - azure
- - infrastructure
+- azure
+- infrastructure
+- learning plan
+- azure arc
 ---
 
 # Learning Plan Resources for Azure Arc

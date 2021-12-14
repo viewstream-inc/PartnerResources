@@ -3,8 +3,10 @@ layout: page
 title: Azure Networking Resources
 permalink: /azure/infrastructure/azure-networking-resources
 tags: 
- - azure
- - infrastructure
+- azure
+- infrastructure
+- learning plan
+- networking
 ---
 
 # [Azure Advanced Networking Resources](https://docs.microsoft.com/en-us/azure/networking/)

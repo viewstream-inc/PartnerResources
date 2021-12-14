@@ -3,8 +3,10 @@ layout: page
 title: Azure VMware Solution (AVS)
 permalink: /azure/infrastructure/azure-vmware-solution
 tags: 
- - azure
- - infrastructure
+- azure
+- infrastructure
+- learning plan
+- avs
 ---
 
 # Learning Plan Resources for Azure VMware Solution (AVS)

@@ -3,8 +3,10 @@ layout: page
 title: DevOps
 permalink: /azure/appdev/devops
 tags: 
- - azure
- - appdev
+- azure
+- appdev
+- learning plan
+- devops
 ---
 
 # Learning Plan Resources for DevOps

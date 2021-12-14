@@ -4,8 +4,10 @@ title: Containerize with Kubernetes
 permalink: /azure/appdev/containerize-with-kubernetes
 campaignid: 1234
 tags: 
- - azure
- - appdev
+- azure
+- appdev
+- learning plan
+- kubernetes
 ---
 
 # Learning Plan Resources for Containerize with Kubernetes
