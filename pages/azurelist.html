@@ -66,10 +66,6 @@ Doc where test:
 
 <!--
 
- assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'data, analytics, and ai'"" 
- assign data_tags = "" %}{% for doc in data_docs %}{% assign ttags = doc.tags | join:',' | append:',' %}{% assign data_tags = data_tags | append:ttags %}{% endfor 
- assign data_tags = data_tags | split:',' | uniq | sort
-
 azure
 
 appdev
