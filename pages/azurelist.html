@@ -32,6 +32,17 @@ permalink: /azure/azureplans
 {% endif %}
 {% endfor %}
 
+[Infrastructure](infrastructure)
+
+{% for doc in all_docs %}
+{% if doc.tags contains "learning plan" and doc.tags contains "infrastructure" %}
+<div class="tag-entry">
+    <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
+</div>
+<div style="padding-bottom: 5px"></div>
+{% endif %}
+{% endfor %}
+
 <!--
 azure
 
@@ -41,4 +52,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 1:56pm
+12/14/2021 2:04pm
