@@ -39,10 +39,13 @@ permalink: /azure/azureplans
 {% endif %}
 {% endfor %}
 
+
+
 Tag test:
 
-{% assign data_tags = all_tags | where_exp: "tag", "tag contains 'learning plan'" %}
+{% assign data_tags = tags_list | where_exp: "tag", "tag contains 'learning plan'" %}
 <div>{% for tag in data_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+
 
 
 <!--
