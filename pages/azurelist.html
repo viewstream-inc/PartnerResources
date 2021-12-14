@@ -43,12 +43,14 @@ permalink: /azure/azureplans
 
 Tag test:
 
-{% assign data_tags = tags_list | where_exp: "tag", "tag contains 'learning plan'" %}
-<div>{% for tag in data_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
-
 Doc where test:
 
 {% assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'data, analytics, and ai'"" %}
+{% assign data_tags = "" %}{% for doc in data_docs %}{% assign ttags = doc.tags | join:',' | append:',' %}{% assign data_tags = data_tags | append:ttags %}{% endfor %}
+
+<div>{% for tag in data_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+
+
 {% for doc in data_docs %}
 <div class="tag-entry" style="padding-left:25px;">
     <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)</div>
@@ -56,7 +58,15 @@ Doc where test:
 </div>
 {% endfor %}
 
+{% capture site_tags %}{% for tag in site.tags %}{% if tag %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endcapture %}{% assign docs_tags = "" %}{% for doc in site.docs %}{% assign ttags = doc.tags | join:',' | append:',' %}{% assign docs_tags = docs_tags | append:ttags %}{% endfor %}
+{% assign all_tags = site_tags | append:docs_tags %}{% assign tags_list = all_tags | split:',' | uniq | sort %}
+{% assign all_docs = site.docs | sort: "title" %}
+
 <!--
+
+assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'data, analytics, and ai'"" 
+for doc in data_docs 
+
 azure
 
 appdev
@@ -65,4 +75,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 3:01pm
+12/14/2021 3:10pm
