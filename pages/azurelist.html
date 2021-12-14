@@ -9,37 +9,33 @@ permalink: /azure/azureplans
 {% assign all_tags = site_tags | append:docs_tags %}{% assign tags_list = all_tags | split:',' | uniq | sort %}
 {% assign all_docs = site.docs | sort: "title" %}
 
-[AppDev](appdev)
+#### {% raw %}[AppDev](appdev){% endraw %}
 
 {% for doc in all_docs %}
 {% if doc.tags contains "learning plan" and doc.tags contains "appdev" %}
-<div class="tag-entry">
+<div class="tag-entry" style="padding-left:25px;">
     <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
 </div>
-<div style="padding-bottom: 5px"></div>
 {% endif %}
 {% endfor %}
 
-
-[Data, Analytics, and AI](data-analytics-ai)
+#### {% raw %}[Data, Analytics, and AI](data-analytics-ai){% endraw %}
 
 {% for doc in all_docs %}
-{% if doc.tags contains "learning plan" and doc.tags contains "data-analytics-ai" %}
-<div class="tag-entry">
+{% if doc.tags contains "learning plan" and doc.tags contains "data, analytics, and ai" %}
+<div class="tag-entry" style="padding-left:25px;">
     <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
 </div>
-<div style="padding-bottom: 5px"></div>
 {% endif %}
 {% endfor %}
 
-[Infrastructure](infrastructure)
+#### {% raw %}[Infrastructure](infrastructure){% endraw %}
 
 {% for doc in all_docs %}
 {% if doc.tags contains "learning plan" and doc.tags contains "infrastructure" %}
-<div class="tag-entry">
+<div class="tag-entry" style="padding-left:25px;">
     <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
 </div>
-<div style="padding-bottom: 5px"></div>
 {% endif %}
 {% endfor %}
 
@@ -52,4 +48,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 2:04pm
+12/14/2021 2:09pm
