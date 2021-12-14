@@ -46,7 +46,9 @@ Tag test:
 {% assign data_tags = tags_list | where_exp: "tag", "tag contains 'learning plan'" %}
 <div>{% for tag in data_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
 
-{% assign data_docs = all_docs | where_exp: "doc.tags", "tag contains 'learning plan'" %}
+Doc where test:
+
+{% assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" %}
 {% for doc in data_docs %}
 <div class="tag-entry" style="padding-left:25px;">
     <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)</div>
@@ -63,4 +65,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 2:45pm
+12/14/2021 2:59pm
