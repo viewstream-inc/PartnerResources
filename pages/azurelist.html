@@ -51,9 +51,10 @@ Doc where test:
     {% assign data_tags = data_tags | append:doc.tags %}
 {% endfor %}
 {% assign datatag_list = data_tags | split:',' | uniq | sort %}
-<div>{% for tag in datatag_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
 
+<div>{% for tag in data_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
 
+<!--
 {% for doc in data_docs %}
 <div class="tag-entry" style="padding-left:25px;">
     <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)</div>
@@ -61,7 +62,7 @@ Doc where test:
 </div>
 {% endfor %}
 
-
+-->
 
 <!--
 
