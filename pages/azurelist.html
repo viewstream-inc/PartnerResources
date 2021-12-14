@@ -9,7 +9,7 @@ permalink: /azure/azureplans
 {% assign all_tags = site_tags | append:docs_tags %}{% assign tags_list = all_tags | split:',' | uniq | sort %}
 {% assign all_docs = site.docs | sort: "title" %}
 
-<h2><a href="{{- site.baseurl -}}/azure/appdev/">AppDev</a></h2>
+<h3><a href="{{- site.baseurl -}}/azure/appdev/">AppDev</a></h3>
 
 {% for doc in all_docs %}
 {% if doc.tags contains "learning plan" and doc.tags contains "appdev" %}
@@ -19,7 +19,7 @@ permalink: /azure/azureplans
 {% endif %}
 {% endfor %}
 
-#### {% raw %}[Data, Analytics, and AI](data-analytics-ai){% endraw %}
+<h3><a href="{{- site.baseurl -}}/azure/data-analytics-ai/">Data, Analytics, and AI</a></h3>
 
 {% for doc in all_docs %}
 {% if doc.tags contains "learning plan" and doc.tags contains "data, analytics, and ai" %}
@@ -29,7 +29,7 @@ permalink: /azure/azureplans
 {% endif %}
 {% endfor %}
 
-#### {% raw %}[Infrastructure](infrastructure){% endraw %}
+<h3><a href="{{- site.baseurl -}}/azure/infrastructure/">Infrastructure</a></h3>
 
 {% for doc in all_docs %}
 {% if doc.tags contains "learning plan" and doc.tags contains "infrastructure" %}
@@ -38,6 +38,12 @@ permalink: /azure/azureplans
 </div>
 {% endif %}
 {% endfor %}
+
+Tag test:
+
+{% assign data_tags = all_tags | where_exp: "tag", "tag contains 'learning plan'" %}
+<div>{% for tag in data_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+
 
 <!--
 azure
@@ -48,4 +54,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 2:18pm
+12/14/2021 2:30pm
