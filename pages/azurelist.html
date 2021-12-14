@@ -9,10 +9,22 @@ permalink: /azure/azureplans
 {% assign all_tags = site_tags | append:docs_tags %}{% assign tags_list = all_tags | split:',' | uniq | sort %}
 {% assign all_docs = site.docs | sort: "title" %}
 
-{% raw %}[AppDev](appdev){% endraw %}
+[AppDev](appdev)
 
 {% for doc in all_docs %}
-{% if doc.tags contains "learning plan" and doc.tags contains "azure" %}
+{% if doc.tags contains "learning plan" and doc.tags contains "appdev" %}
+<div class="tag-entry">
+    <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
+</div>
+<div style="padding-bottom: 5px"></div>
+{% endif %}
+{% endfor %}
+
+
+[Data, Analytics, and AI](data-analytics-ai)
+
+{% for doc in all_docs %}
+{% if doc.tags contains "learning plan" and doc.tags contains "data-analytics-ai" %}
 <div class="tag-entry">
     <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
 </div>
@@ -29,4 +41,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 1:50pm
+12/14/2021 1:56pm
