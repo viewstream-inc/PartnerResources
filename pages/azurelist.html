@@ -9,33 +9,16 @@ permalink: /azure/azureplans
 {% assign all_tags = site_tags | append:docs_tags %}{% assign tags_list = all_tags | split:',' | uniq | sort %}
 {% assign all_docs = site.docs | sort: "title" %}
 
-#### {% raw %}[AppDev](appdev){% endraw %}
+{% raw %}[AppDev](appdev){% endraw %}
 
 {% for doc in all_docs %}
 {% if doc.tags contains "learning plan" and doc.tags contains "azure" %}
 <div class="tag-entry">
     <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
 </div>
-<div style="padding-bottom: 5"></div>
+<div style="padding-bottom: 5px"></div>
 {% endif %}
 {% endfor %}
-
-#### {% raw %}[Data, Analytics, and AI](data-analytics-ai){% endraw %}
-
-{% for doc in all_docs %}
-{% if doc.tags contains "learning plan" and doc.tags contains "data, analytics, and ai" %}
-<div class="tag-entry">
-    <div><a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a> (Updated <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%B %d, %Y" -}}</time>)
-</div>
-<div style="padding-bottom: 5"></div>
-{% endif %}
-{% endfor %}
-
-#### {% raw %}[Infrastructure](infrastructure){% endraw %}
-
-#### {% raw %}[IoT](iot){% endraw %}
-
-#### {% raw %}[Marketplace](azure-marketplace){% endraw %}
 
 <!--
 azure
@@ -46,4 +29,4 @@ infrastructure
 IoT
 marketplace
 -->
-12/14/2021 12:20pm
+12/14/2021 12:26pm
