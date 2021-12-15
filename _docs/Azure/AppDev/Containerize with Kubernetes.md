@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Containerize with Kubernetes
+description: Resources for Kubernetes, for container orchestration
+date: 2021-12-01
 permalink: /azure/appdev/containerize-with-kubernetes
 campaignid: 1234
 tags: 
