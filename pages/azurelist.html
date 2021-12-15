@@ -64,11 +64,11 @@ data tag where test:
 {% assign data_tags = "" %}
 {% for doc in data_docs %}
     {% assign ttags = doc.tags | join:'|' | append:'|' %}
-    {% assign docs_tags = docs_tags | append:ttags %}
+    {% assign data_tags = data_tags | append:ttags %}
 {% endfor %}
 {% assign datatag_list = data_tags | replace: "||", "|" | split:'|' | uniq | sort | compact %}
 
-<div>{% for tag in data_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+<div>{% for tag in datatag_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
 
 <!--
 
