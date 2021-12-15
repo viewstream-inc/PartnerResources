@@ -75,9 +75,10 @@ permalink: /azure/azureplans
 {% for doc in filtered_docs %}
     {% assign ttags = doc.tags | join:'|' | append:'|' %}
     {% assign filtered_tags = filtered_tags | append:ttags %}
-    {% assign filtered_dates = filtered_dates | append:doc.date %}
+    {% assign filtered_dates = filtered_dates | append:doc.date | append:"|" %}
 {% endfor %}
 {% assign filteredtag_list = filtered_tags | replace: "||", "|" | split:'|' | uniq | sort | compact %}
+{% assign filtered_dates = filtered_dates | replace: "||", "|" | split:'|' | uniq | sort | compact %}
 <h3 style="margin-bottom: 5px;"><a href="{{- site.baseurl -}}/azure/data-analytics-ai/">Data, Analytics, and AI</a></h3>
 <div>{{ filtered_docs.size }} learning plans</div>
 <div>Updated {{ filtered_dates }}</div>
