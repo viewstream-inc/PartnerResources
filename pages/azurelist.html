@@ -52,14 +52,19 @@ permalink: /azure/azureplans
 {% endif %}
 {% endfor %}
 
-all tag test:
-<div>{% for tag in all_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}{% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+<hr/>
 
-all tags_list test:
-<div>{% for tag in tags_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}{% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+<h3><a href="{{- site.baseurl -}}/azure/appdev/">AppDev</a></h3>
+{% assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'appdev'"" %}
+{% assign data_tags = "" %}
+{% for doc in data_docs %}
+    {% assign ttags = doc.tags | join:'|' | append:'|' %}
+    {% assign data_tags = data_tags | append:ttags %}
+{% endfor %}
+{% assign datatag_list = data_tags | replace: "||", "|" | split:'|' | uniq | sort | compact %}
+<div>{% for tag in datatag_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
 
-data tag where test:
-
+<h3><a href="{{- site.baseurl -}}/azure/data-analytics-ai/">Data, Analytics, and AI</a></h3>
 {% assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'data, analytics, and ai'"" %}
 {% assign data_tags = "" %}
 {% for doc in data_docs %}
@@ -67,8 +72,27 @@ data tag where test:
     {% assign data_tags = data_tags | append:ttags %}
 {% endfor %}
 {% assign datatag_list = data_tags | replace: "||", "|" | split:'|' | uniq | sort | compact %}
-
 <div>{% for tag in datatag_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+
+<h3><a href="{{- site.baseurl -}}/azure/infrastructure/">Infrastructure</a></h3>
+{% assign data_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'infrastructure'"" %}
+{% assign data_tags = "" %}
+{% for doc in data_docs %}
+    {% assign ttags = doc.tags | join:'|' | append:'|' %}
+    {% assign data_tags = data_tags | append:ttags %}
+{% endfor %}
+{% assign datatag_list = data_tags | replace: "||", "|" | split:'|' | uniq | sort | compact %}
+<div>{% for tag in datatag_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+
+
+
+<!--
+all tag test:
+<div>{% for tag in all_tags %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}{% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+
+all tags_list test:
+<div>{% for tag in tags_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}{% endif %}">{{ tag }}</a></span>{% endfor %}</div>
+-->
 
 <!--
 
