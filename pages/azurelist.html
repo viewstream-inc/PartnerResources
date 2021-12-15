@@ -57,24 +57,30 @@ permalink: /azure/azureplans
 
 {% assign filtered_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'appdev'"" %}
 {% assign filtered_tags = "" %}
+{% assign filtered_dates = "" %}
 {% for doc in filtered_docs %}
     {% assign ttags = doc.tags | join:'|' | append:'|' %}
     {% assign filtered_tags = filtered_tags | append:ttags %}
+    {% assign filtered_dates = filtered_dates | append:doc.date %}
 {% endfor %}
 {% assign filteredtag_list = filtered_tags | replace: "||", "|" | split:'|' | uniq | sort | compact %}
-<h3><a href="{{- site.baseurl -}}/azure/appdev/">AppDev</a></h3>
+<h3 style="margin-bottom: 5px;"><a href="{{- site.baseurl -}}/azure/appdev/">AppDev</a></h3>
 <div>{{ filtered_docs.size }} learning plans</div>
+<div>Updated {{ filtered_dates }}</div>
 <div>{% for tag in filteredtag_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
 
 {% assign filtered_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'data, analytics, and ai'"" %}
 {% assign filtered_tags = "" %}
+{% assign filtered_dates = "" %}
 {% for doc in filtered_docs %}
     {% assign ttags = doc.tags | join:'|' | append:'|' %}
     {% assign filtered_tags = filtered_tags | append:ttags %}
+    {% assign filtered_dates = filtered_dates | append:doc.date %}
 {% endfor %}
 {% assign filteredtag_list = filtered_tags | replace: "||", "|" | split:'|' | uniq | sort | compact %}
-<h3><a href="{{- site.baseurl -}}/azure/data-analytics-ai/">Data, Analytics, and AI</a></h3>
+<h3 style="margin-bottom: 5px;"><a href="{{- site.baseurl -}}/azure/data-analytics-ai/">Data, Analytics, and AI</a></h3>
 <div>{{ filtered_docs.size }} learning plans</div>
+<div>Updated {{ filtered_dates }}</div>
 <div>{% for tag in filteredtag_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
 
 {% assign filtered_docs = all_docs | where_exp: "doc","doc.tags contains 'learning plan'" | where_exp: "doc","doc.tags contains 'infrastructure'"" %}
@@ -84,7 +90,7 @@ permalink: /azure/azureplans
     {% assign filtered_tags = filtered_tags | append:ttags %}
 {% endfor %}
 {% assign filteredtag_list = filtered_tags | replace: "||", "|" | split:'|' | uniq | sort | compact %}
-<h3><a href="{{- site.baseurl -}}/azure/infrastructure/">Infrastructure</a></h3>
+<h3 style="margin-bottom: 5px;"><a href="{{- site.baseurl -}}/azure/infrastructure/">Infrastructure</a></h3>
 <div>{{ filtered_docs.size }} learning plans</div>
 <div>{% for tag in filteredtag_list %}<span style="font-size:12px" class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{% if site.tag_search_endpoint %}{{ site.tag_search_endpoint }}{{ tag }}{% else %}{{ site.url }}{{ site.baseurl }}/tags#{{ tag }} {% endif %}">{{ tag }}</a></span>{% endfor %}</div>
 
